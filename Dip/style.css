@@ -83,51 +83,55 @@ footer {
 @keyframes wipe-enter {
   0% {
     transform: translateX(-100px);
-    opacity: 0%;
   }
   100% {
     transform: translateX(0);
+    opacity: 100%;
   }
 }
 @keyframes wipe-enter2 {
   0% {
     transform: translateX(100px);
-    opacity: 0%;
   }
   100% {
     transform: translateX(0);
+    opacity: 100%;
   }
 }
 @keyframes topX {
   0% {
     transform: translateY(50px);
-    opacity: 0%;
   }
   100% {
     transform: translateY(0);
+    opacity: 100%;
   }
 }
 @keyframes reduce {
   0% {
     transform: scaleX(1.5);
-    opacity: 0%;
   }
   100% {
     transform: scaleX(1.0);
+    opacity: 100%;
   }
 }
 @media (prefers-reduced-motion: no-preference) {
   .line-animation {
     animation: wipe-enter 1.4s 1;
+    animation-fill-mode: forwards;
   }
   .line-animation2 {
     animation: wipe-enter2 1.4s 1;
+    animation-fill-mode: forwards;
   }
   .topX {
   	animation: topX 1.4s 1;
+    animation-fill-mode: forwards;
   }
   .reduce {
   	animation: reduce 1.4s 1;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -197,6 +201,9 @@ button {
 .i2 {
 	margin-top: 200px;
 	width: 57%;
+}
+.process, .gt, .gl, .gr, .red {
+	opacity: 0%;
 }
 .exp, .process, .process img {
 	width: 100%;
