@@ -281,3 +281,54 @@ button {
 .lx div {
 	width: 22%;
 }
+@media only screen and (max-width: 600px){
+	.row{
+		flex-direction: column;
+	}
+	.col{
+		margin-bottom: 24px;
+	}
+	h1{
+		font-size: 36px;
+	}
+	h2{
+		font-size: 24px;
+	}
+	h3{
+		font-size: 36px;
+		margin-top: 36px;
+	}
+	h4{
+		font-size: 28px;
+	}
+	li,
+  	p,
+  	span{
+    	font-size: 20px;
+  	}
+  	.half,
+  	.m2{
+    	width: 100%;
+  	}
+	.i1{
+		width: 100%;
+		left: 0;
+	}
+	.i4,
+	.i5{
+		width: 100%;
+		left: 0;
+		margin-top: 24px;
+	}
+	.process .col{
+		width: 50%;
+	}
+	.arrow{
+		left: 44%;
+	}
+	.t2,
+	.t1{
+		width: 100%;
+		margin: 36px 0 12px;
+	}
+}
